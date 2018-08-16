@@ -28,6 +28,10 @@ dns | SUCCESS => {"changed": false, "ping": "pong"}
 www | SUCCESS => {"changed": false, "ping": "pong"}
 $ sudo service jail start mail
 Starting jails: mail.
+   JID  IP Address      Hostname                      Path
+    16  192.168.1.1     www                           /home/jails/www
+    17  192.168.1.2     dns                           /home/jails/dns
+    18  192.168.1.3     mail                          /home/jails/mail
 $ ansible jails -m ping -o
 dns | SUCCESS => {"changed": false, "ping": "pong"}
 www | SUCCESS => {"changed": false, "ping": "pong"}
