@@ -26,7 +26,7 @@ $ jls
 $ ansible jails -m ping -o
 dns | SUCCESS => {"changed": false, "ping": "pong"}
 www | SUCCESS => {"changed": false, "ping": "pong"}
-$ sudo service jail start mail                                                                                                           
+$ sudo service jail start mail
 Starting jails: mail.
 $ ansible jails -m ping -o
 dns | SUCCESS => {"changed": false, "ping": "pong"}
